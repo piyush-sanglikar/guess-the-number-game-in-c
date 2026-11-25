@@ -1,128 +1,131 @@
-# 🎮 Guess the Number Game in C
+# 🎯 Number Guessing Game in C
 
-A beginner-friendly **Number Guessing Game developed using C Programming**. In this interactive console-based game, the computer generates a random number between 1 and 100, and the player has a maximum of 7 attempts to guess the correct number.
+A simple, interactive, and beginner-friendly **Number Guessing Game** developed using the C programming language.
 
-This project demonstrates fundamental C programming concepts such as random number generation, loops, conditional statements, and user input handling.
+The computer generates a random number between **1 and 100**, and the player has **7 attempts** to guess the correct number.
 
-## 📌 Project Overview
+## 🚀 Features
 
-The Guess the Number Game is a simple yet interesting C programming project designed to improve logical thinking and problem-solving abilities.
-
-The computer randomly selects a number, and the player must guess it. After every attempt, the program provides hints to help the player determine whether the guessed number is too high or too low.
-
-## ✨ Features
-
-- 🎯 Random number generation between 1 and 100.
+- 🎲 Random number generation (1–100).
 - 🔢 Maximum 7 guessing attempts.
-- 💡 Helpful hints (Guess higher or lower).
-- 🏆 Displays a congratulatory message upon winning.
-- 📊 Tracks the total number of attempts.
-- 🎮 Simple and interactive console interface.
-- 👋 Displays the correct answer when the player loses.
+- ⬆️ Hints to guess a larger number.
+- ⬇️ Hints to guess a smaller number.
+- ⏳ Displays remaining attempts.
+- 🚫 Input validation for numbers outside the given range.
+- 🏆 Congratulatory message when the correct number is guessed.
+- ❌ Displays the correct number if all attempts are exhausted.
 
 ## 🛠️ Technologies Used
 
-- **Programming Language:** C
-- **Compiler:** GCC
-- **Standard Libraries:**
-  - `stdio.h` – Input and Output operations.
+- **Language:** C
+- **Header Files:**
+  - `stdio.h` – Input and output operations.
   - `stdlib.h` – Random number generation.
-  - `time.h` – Time-based random seed generation.
+  - `time.h` – Random seed generation.
 
-## 🧠 C Programming Concepts Used
+## 💻 How to Run
 
-This project helped me practice the following concepts:
-
-1. Variables and Data Types
-2. Conditional Statements (`if-else`)
-3. Do-While Loop
-4. Break Statement
-5. Increment Operator (`++`)
-6. Random Number Generation (`rand()` and `srand()`)
-7. User Input (`scanf()`)
-8. Standard Input and Output (`printf()`)
-
-## ⚙️ How to Run the Project
-
-**Step 1: Clone the repository**
+### 1. Clone the Repository
 
 ```bash
 git clone YOUR_REPOSITORY_URL
 ```
 
-**Step 2: Navigate to the project folder**
+### 2. Navigate to the Project Folder
 
 ```bash
-cd guess-the-number-game-in-c
+cd Number-Guessing-Game
 ```
 
-**Step 3: Compile the program**
+### 3. Compile the Program
+
+Using GCC:
 
 ```bash
-gcc guess.c -o guess
+gcc guessing_game.c -o guessing_game
 ```
 
-**Step 4: Execute the program**
+### 4. Run the Program
 
-On Windows:
-
+**Windows:**
 ```bash
-guess.exe
+guessing_game.exe
 ```
 
-On Linux/macOS:
-
+**Linux / macOS:**
 ```bash
-./guess
+./guessing_game
 ```
 
 ## 🎮 Sample Output
 
 ```text
-.........Welcome to world of guessing numbers........
+========================================
+          NUMBER GUESSING GAME
+========================================
 
-Please enter your Guess between (1-100): 50
+Welcome to the Number Guessing Game!
 
-Guess a smaller number.
+You have 7 attempts to guess the number.
 
-Please enter your Guess between (1-100): 25
+Enter your guess (1-100): 40
 
-Guess a larger number.
+        ↑ Guess a larger number!
 
-Please enter your Guess between (1-100): 35
+Attempts remaining: 6
 
-Congratulations! You have Successfully guessed the Correct Number in 3 attempts.
+Enter your guess (1-100): 70
+
+        ↓ Guess a smaller number!
+
+Attempts remaining: 5
+
+Enter your guess (1-100): 55
+
+========================================
+          CONGRATULATIONS!
+========================================
+
+You guessed the correct number in 3 attempts!
+
+========================================
+             GAME OVER
+========================================
+
+Developed by Piyush
 ```
 
-## 🎯 Learning Objectives
+*Note: The sample output is for demonstration purposes. The random number changes every time the program runs.*
 
-The main objective of this project is to:
+## 📚 Concepts Practiced
 
-- Develop logical thinking and problem-solving skills.
-- Understand how random numbers work in C.
-- Gain practical experience with loops and conditional statements.
-- Learn how to build interactive console-based applications.
-- Improve programming fundamentals through hands-on practice.
+This project helped me understand and practise:
+
+- Variables and data types.
+- Conditional statements (`if-else`).
+- `do-while` loop.
+- Random number generation (`rand()` and `srand()`).
+- Counters and increment operators.
+- Input validation.
+- `break` and `return` statements.
+
+## 🎯 Learning Outcome
+
+Through this project, I improved my understanding of C programming, logical thinking, conditional statements, loops, and problem-solving.
 
 ## 🔮 Future Improvements
 
-Planned features for future versions:
-
 - Add difficulty levels (Easy, Medium, Hard).
-- Implement input validation.
-- Add a Play Again option.
+- Add a replay option.
 - Introduce a scoring system.
-- Save the highest score using file handling.
+- Track the player's best score.
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Piyush**
 
-BE Computer Engineering Student  
-Interested in C Programming, Problem Solving and Software Development.
+First-Year B.E. Computer Science Engineering Student
 
 ---
 
-⭐ If you find this project interesting, consider giving this repository a star!
-
-**#CProgramming #GuessTheNumber #CProjects #BeginnerProjects #Programming #GitHub**
+⭐
